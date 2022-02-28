@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>Label</key>
+   <string>community.benrmclemore.downloads2trash</string>
+   <key>Program</key>
+   <string>/usr/local/bin/community.benrmclemore.downloads2trash.sh</string>
+   <key>RunAtLoad</key>
+   <true/>
+   <key>StartInterval</key>
+   <integer>3600</integer>
+   <key>StandardOutPath</key>
+   <string>/tmp/logs/community.benrmclemore.downloads2trash.log</string>
+   <key>StandardErrorPath</key>
+   <string>/tmp/logs/community.benrmclemore.downloads2trash.log</string>
+</dict>
+</plist>
