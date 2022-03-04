@@ -2,6 +2,7 @@
 
 # Constants
 DOWNLOADS=~/Downloads
+DS_STORE=.DS_Store
 TRASH=~/.Trash
 
 # Echo the date
@@ -19,6 +20,12 @@ do
   # init new name
   BASENAME=$(basename $NAME)
   NEW_NAME="$TRASH/$BASENAME"
+
+  # make sure it isn't DS_Store
+  if ["$BASENAME" = "$DS_STORE"]
+  then
+    continue
+  fi
 
   # make sure name isn't taken
   I=1
