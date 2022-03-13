@@ -37,5 +37,5 @@ do
 
   # move the file
   mv "$NAME" "$NEW_NAME"
-  echo "mv \"$NAME\" \"$NEW_NAME\""
+  echo "$BASENAME"
 done
