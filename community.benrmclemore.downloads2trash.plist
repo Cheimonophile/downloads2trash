@@ -9,7 +9,7 @@
    <key>RunAtLoad</key>
    <true/>
    <key>StartInterval</key>
-   <integer>3600</integer>
+   <integer>86400</integer>
    <key>StandardOutPath</key>
    <string>/tmp/logs/community.benrmclemore.downloads2trash.log</string>
    <key>StandardErrorPath</key>
