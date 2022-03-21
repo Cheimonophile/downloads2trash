@@ -6,7 +6,6 @@ DS_STORE=.DS_Store
 TRASH=~/.Trash
 
 # Echo the date
-echo ""
 echo "--- $(date)"
 
 # mdfind -ctime +7
@@ -40,3 +39,4 @@ do
   mv "$NAME" "$NEW_NAME"
   echo "$BASENAME"
 done
+echo ""
