@@ -6,12 +6,16 @@ PLIST=benrmclemore.downloads2trash.plist
 
 all: install
 
-install: $(AGENTS)/$(PLIST)
+install: $(AGENTS)/$(PLIST) run
+	rm logs.log
 	launchctl unload $(AGENTS)/$(PLIST)
 	launchctl load $(AGENTS)/$(PLIST)
 
-$(AGENTS)/$(PLIST): $(PLIST) makefile
+$(AGENTS)/$(PLIST): $(PLIST)
 	sed 's+@DIR+$(shell pwd)+g' "$(PLIST)" >$(AGENTS)/$(PLIST)
+
+run: run.c
+	gcc -o run run.c
 
 uninstall:
 	launchctl unload $(AGENTS)/$(PLIST)

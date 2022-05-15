@@ -1,5 +1,6 @@
 # environment
 .vscode/
+env.sh
 
 # Mac OS
 .DS_Store

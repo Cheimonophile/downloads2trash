@@ -4,8 +4,13 @@
 <dict>
    <key>Label</key>
    <string>benrmclemore.downloads2trash</string>
-   <key>Program</key>
-   <string>@DIR/run.sh</string>
+   <key>ProgramArguments</key>
+   <array>
+      <string>@DIR/run</string>
+      <string>"@DIR/benrmclemore.downloads2trash.sh"</string>
+   </array>
+   <!-- <key>Program</key>
+   <string>@DIR/run.sh</string> -->
    <key>RunAtLoad</key>
    <true/>
    <key>StartInterval</key>
