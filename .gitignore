@@ -1,2 +1,8 @@
+# environment
 .vscode/
+
+# Mac OS
 .DS_Store
+
+# unnecessary
+*.log

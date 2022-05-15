@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
    <key>Label</key>
-   <string>community.benrmclemore.downloads2trash</string>
+   <string>benrmclemore.downloads2trash</string>
    <key>Program</key>
-   <string>/usr/local/bin/community.benrmclemore.downloads2trash.sh</string>
+   <string>@DIR/run.sh</string>
    <key>RunAtLoad</key>
    <true/>
    <key>StartInterval</key>
    <integer>86400</integer>
    <key>StandardOutPath</key>
-   <string>/tmp/logs/community.benrmclemore.downloads2trash.log</string>
+   <string>@DIR/logs.log</string>
    <key>StandardErrorPath</key>
-   <string>/tmp/logs/community.benrmclemore.downloads2trash.log</string>
+   <string>@DIR/logs.log</string>
 </dict>
-</plist>
+</plist> 
