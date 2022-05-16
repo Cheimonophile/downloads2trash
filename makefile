@@ -1,18 +1,23 @@
-# Must also enable full disk access for /bin/sh in System Preferences > Privacy 
-# > Full Disk Access
+# arguments
+NAME=downloads2trash
+EXE=downloads2trash.sh
 
+# constants
 AGENTS=~/Library/LaunchAgents
-PLIST=benrmclemore.downloads2trash.plist
+USER=$(shell whoami)
+LABEL=$(USER).$(NAME)
+PLIST=$(LABEL).plist
+DIR=$(shell pwd)
 
 all: install
 
 install: $(AGENTS)/$(PLIST) run
-	rm logs.log
+	rm logs.log || True
 	launchctl unload $(AGENTS)/$(PLIST)
 	launchctl load $(AGENTS)/$(PLIST)
 
-$(AGENTS)/$(PLIST): $(PLIST)
-	sed 's+@DIR+$(shell pwd)+g' "$(PLIST)" >$(AGENTS)/$(PLIST)
+$(AGENTS)/$(PLIST): info.plist
+	sed 's+@DIR+$(DIR)+g; s+@LABEL+$(LABEL)+g; s+@EXE+$(EXE)+g' info.plist >$(AGENTS)/$(PLIST)
 
 run: run.c
 	gcc -o run run.c
