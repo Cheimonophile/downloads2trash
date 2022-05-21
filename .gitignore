@@ -4,8 +4,8 @@
 # Mac OS
 .DS_Store
 
-# unnecessary
-*.log
-
 # build
 run
+
+# misc
+*.log

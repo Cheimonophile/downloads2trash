@@ -33,7 +33,7 @@ do
   do
     NEW_NAME="$TRASH/($I) $BASENAME"
     I=$(($I+1))
-  done
+  done 
 
   # move the file
   mv "$NAME" "$NEW_NAME"
