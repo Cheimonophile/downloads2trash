@@ -6,7 +6,7 @@ DS_STORE=.DS_Store
 TRASH=~/.Trash
 
 # Echo the date
-echo "--- $(date)"
+echo "-------[ $(date) ]-------"
 
 # mdfind -ctime +7
 find ${DOWNLOADS} -ctime +7 -depth 1 | while read NAME
