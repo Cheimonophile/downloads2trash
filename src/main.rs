@@ -54,7 +54,6 @@ fn script() -> Result<(), Box<dyn error::Error>> {
         log::info!("{}", file_name);
         log::warn!("{}", trash_path.exists());
         fs::rename(&file_path, trash_path.join(file_name))?;
-        
     }
 
 
