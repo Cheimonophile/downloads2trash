@@ -9,3 +9,7 @@ run
 
 # misc
 *.log
+
+# Added by cargo
+
+/target
