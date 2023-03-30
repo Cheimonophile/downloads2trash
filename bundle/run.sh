@@ -1,2 +1,3 @@
-#!/bin/sh -x
+#!/bin/sh
+echo "-------[ $(date) ]-------"
 ./downloads2trash
